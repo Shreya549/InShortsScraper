@@ -1,6 +1,7 @@
 **InShorts API**
+---
 
-An API that fetches and returns news, including heading and content, from www.inshorts.com
+An API that fetches and returns news, including headline and content, from www.inshorts.com
 
 * **URL**
 
@@ -27,9 +28,10 @@ An API that fetches and returns news, including heading and content, from www.in
   
 * **Sample Call:**
 
-  * **NodeJs Request:**
+  * **NodeJs - Request:**
 
-    ```var request = require('request');
+    ```
+    var request = require('request');
       var options = {
         'method': 'GET',
         'url': 'https://limitless-shelf-94834.herokuapp.com/scrape?category=sports',
@@ -41,9 +43,10 @@ An API that fetches and returns news, including heading and content, from www.in
       console.log(response.body);
     });
     
-  * **Python Requests:**
+  * **Python - Requests:**
     
-    ```import requests
+    ```
+    import requests
 
     url = "https://limitless-shelf-94834.herokuapp.com/scrape?category=sports"
 
@@ -51,8 +54,29 @@ An API that fetches and returns news, including heading and content, from www.in
     headers= {}
 
     response = requests.request("GET", url, headers=headers, data = payload)
+    
+    print(response.text.encode('utf8')) 
+    
+  * **JavaScript - Fetch:**
+  
+    ```
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
 
-    print(response.text.encode('utf8'))
+    fetch("https://limitless-shelf-94834.herokuapp.com/scrape?category=sports", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+      
+  * **cURL - cURL**
+  
+    ```
+    curl --location --request GET 'https://limitless-shelf-94834.herokuapp.com/scrape?category=sports'
+    
+      
+
     
   
 
