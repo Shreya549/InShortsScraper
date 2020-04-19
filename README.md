@@ -75,6 +75,8 @@ An API that fetches and returns news, including headline and content, from www.i
     ```
     curl --location --request GET 'https://limitless-shelf-94834.herokuapp.com/scrape?category=sports'
     
+  - [The documentation of the API can also be read here!](https://documenter.getpostman.com/view/7941616/Szf6WnxK?version=latest)
+    
       
 
     
