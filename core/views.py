@@ -12,7 +12,7 @@ from csv import writer
 class Scraper(APIView):
 
     def get(self, request):
-        category = request.data["category"]
+        category = request.query_params.get('category', None)
         link = "https://inshorts.com/en/read/" + category
 
         response = requests.get(link)
@@ -37,7 +37,7 @@ class Scraper(APIView):
             news.append(shorts)
 
         if (len(news)!=0):
-            return Response(news, status = status.HTTP_200_OK)
+            return Response({"news" : news}, status = status.HTTP_200_OK)
         else:
             return Response(status = status.HTTP_404_NOT_FOUND)
 
