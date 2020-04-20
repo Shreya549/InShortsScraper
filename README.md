@@ -5,11 +5,12 @@ An API that fetches and returns news, including headline and content, from www.i
 
 * **URL**
 
-  `https://limitless-shelf-94834.herokuapp.com`
+  `https://limitless-shelf-94834.herokuapp.com/scrape`
 
 * **Method**
 
   `GET`
+      
 
 * **URL Params**
 
