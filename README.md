@@ -1,6 +1,7 @@
 # InShorts API
----
-An API that fetches and returns news, including headline and content, from www.inshorts.com
+
+> <Subtitle>
+> An API that fetches and returns news, including headline and content, from www.inshorts.com
 
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/7941616/Szf6WnxK?version=latest) 
 
@@ -16,6 +17,9 @@ $ pip3 install -r requirements.txt
 $ python3 manage.py runserver
 ```
 
+## Contributors
+  <a href="https://github.com/Shreya549">Shreya Chatterjee</a>
+
 ## URL
 
   `https://limitless-shelf-94834.herokuapp.com/scrape`
@@ -29,7 +33,7 @@ $ python3 manage.py runserver
 
   **Required:**
 
-    `category = [String]`
+   `category = [String]`
 
 ## Success Response
 
@@ -88,6 +92,11 @@ $ python3 manage.py runserver
   
     ```
     curl --location --request GET 'https://limitless-shelf-94834.herokuapp.com/scrape?category=sports'
+    
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
     
 <p align="center">
 	With :heart: by <a href="" target="_blank">Shreya Chatterjee</a>
