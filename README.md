@@ -1,33 +1,46 @@
-**InShorts API**
+# InShorts API
 ---
 
 An API that fetches and returns news, including headline and content, from www.inshorts.com
+---
 
-* **URL**
+[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/7941616/Szf6WnxK?version=latest) 
+
+
+## Instructions to run
+
+```
+$ git clone https://github.com/Shreya549/InShortsScraper
+$ cd InShortsScraper
+$ pip3 install -r requirements.txt
+$ python3 manage.py runserver
+```
+
+## URL
 
   `https://limitless-shelf-94834.herokuapp.com/scrape`
 
-* **Method**
+## Method
 
   `GET`
       
 
-* **URL Params**
+## URL Params
 
   **Required:**
 
     `category = [String]`
 
-* **Success Response**
+## Success Response
 
   * **Code:** `HTTP 200 OK`
   * **Content:** `{"news": [ {"headline": "headline_data","content": "content_data"} ] }`
        
-* **Error Response:**
+## Error Response:
 
   * **Code:** `HTTP 404 Not Found`
   
-* **Sample Call:**
+## Sample Call:
 
   * **NodeJs - Request:**
 
@@ -76,7 +89,9 @@ An API that fetches and returns news, including headline and content, from www.i
     ```
     curl --location --request GET 'https://limitless-shelf-94834.herokuapp.com/scrape?category=sports'
     
-  - [The documentation of the API can also be read here!](https://documenter.getpostman.com/view/7941616/Szf6WnxK?version=latest)
+<p align="center">
+	With :heart: by <a href="" target="_blank">Shreya Chatterjee</a>
+</p>
     
       
 
