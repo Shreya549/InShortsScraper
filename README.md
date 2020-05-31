@@ -1,10 +1,10 @@
 # InShorts API
 ---
-
 An API that fetches and returns news, including headline and content, from www.inshorts.com
----
 
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/7941616/Szf6WnxK?version=latest) 
+
+---
 
 
 ## Instructions to run
