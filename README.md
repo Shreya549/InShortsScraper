@@ -22,7 +22,7 @@ $ python3 manage.py runserver
 
 ## URL
 
-  `https://limitless-shelf-94834.herokuapp.com/scrape`
+  `https://scrape-inshorts.herokuapp.com/scrape`
 
 ## Method
 
@@ -52,7 +52,7 @@ $ python3 manage.py runserver
     var request = require('request');
       var options = {
         'method': 'GET',
-        'url': 'https://limitless-shelf-94834.herokuapp.com/scrape?category=sports',
+        'url': 'https://scrape-inshorts.herokuapp.com/scrape?category=sports',
         'headers': {
            }
         };
@@ -66,7 +66,7 @@ $ python3 manage.py runserver
     ```
     import requests
 
-    url = "https://limitless-shelf-94834.herokuapp.com/scrape?category=sports"
+    url = "https://scrape-inshorts.herokuapp.com/scrape?category=sports"
 
     payload = {}
     headers= {}
@@ -83,7 +83,7 @@ $ python3 manage.py runserver
       redirect: 'follow'
     };
 
-    fetch("https://limitless-shelf-94834.herokuapp.com/scrape?category=sports", requestOptions)
+    fetch("https://scrape-inshorts.herokuapp.com/scrape?category=sports", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -91,7 +91,7 @@ $ python3 manage.py runserver
   * **cURL - cURL**
   
     ```
-    curl --location --request GET 'https://limitless-shelf-94834.herokuapp.com/scrape?category=sports'
+    curl --location --request GET 'https://scrape-inshorts.herokuapp.com/scrape?category=sports'
     
 ## License
 
