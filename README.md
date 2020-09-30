@@ -1,7 +1,10 @@
 # InShorts API
 
 > <Subtitle>
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Shreya549/InShortsScraper?logo=github&style=social)](https://github.com/Shreya549/) [![GitHub last commit](https://img.shields.io/github/last-commit/Shreya549/InShortsScraper?style=social&logo=git)](https://github.com/Shreya549/) [![GitHub stars](https://img.shields.io/github/stars/Shreya549/InShortsScraper?style=social)](https://github.com/Shreya549/InShortsScraper/stargazers) [![GitHub forks](https://img.shields.io/github/forks/Shreya549/InShortsScraper?style=social&logo=git)](https://github.com/Shreya549/InShortsScraper/network)
 > An API that fetches and returns news, including headline and content, from www.inshorts.com
+
+
 
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/7941616/Szf6WnxK?version=latest) 
 
